@@ -12,13 +12,13 @@ Le but était d'ajouter notre champ type dans l'onglet du produit
 
 ![Screenshot](img/dev_produit_type.png)
 
-Pour faire cette modification nous avons créé notre propre module "product_type" puis nous avons créé une classe ProductTemplate dans laquelle on effectue un lien vers la template du module product d'Odoo.
+Pour faire cette modification nous avons créé notre propre module "product_type" puis nous avons créé une classe TypeProduct qui permet de définir le nom de nos types.
+
+![Screenshot](img/class_type_product.PNG)
+
+Ainsi que la classe ProductTemplate dans laquelle on effectue un lien vers la template du module product d'Odoo.
 
 ![Screenshot](img/class_product.PNG)
-
-On a ensuite initialisé une variable contenant un tableau de type de produit.
-
-#
 
 Pour l'affichage on crée un record dans lequel on appelle la variable de notre models.py, on place ensuite le tout dans note template XML.
 
@@ -29,21 +29,19 @@ Pour l'affichage on crée un record dans lequel on appelle la variable de notre 
 
 #
 
-Nous avons créé notre propre module et nous l'avons connecté avec la database afin de créer des types de produit.
+Dans la classe ProductTemplate, nous avons effectué la connexion avec la table à l'aide de la fonction Many2one.
 
-#
-
-On peut y accéder depuis le menu d'Odoo 
+![Screenshot](img/many2one.PNG)
 
 ## Créer une interface dans Odoo qui permet de rajouter les types de de produits
 
 #
 
-Nous avons créé notre propre module et nous l'avons connecté avec la database afin de créer des types de produit.ts.
+Nous avons créé notre propre module et nous l'avons connecté avec la database afin de créer des types de produits.
 
 # 
 
-On peut accéder à l'interface depuis le menu de Odoo
+On peut accéder à l'interface depuis le menu de Odoo ainsi que depuis l'interface du produit.
 
 ![Screenshot](img/menu_product_type.PNG)
 
