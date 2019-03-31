@@ -12,4 +12,4 @@
 + HTML
 
 ## Documentation complète
-Le [lien](https://github.com/pierre-roman/Projet-Odoo-Type-Product/blob/master/documentation/docs/index.md) de la documentation du projet.
+Le [lien](https://rext2507.github.io/product_type/util/) de la documentation du projet.
