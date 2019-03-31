@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Utilisation - Groupe 3 documentation</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">Groupe 3 documentation</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="..">Accueil</a>
+                            </li>
+                            <li >
+                                <a href="../dev/">Développement</a>
+                            </li>
+                            <li class="active">
+                                <a href="./">Utilisation</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../dev/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#utilisation-projet-odoo-bieraubeurre">Utilisation projet ODOO: Bieraubeurre</a></li>
+        <li class="main "><a href="#creer-des-produits-avec-le-nouveaux-type">Créer des produits avec le nouveaux type</a></li>
+        <li class="main "><a href="#creer-un-nouveau-type">Créer un nouveau type</a></li>
+        <li class="main "><a href="#creer-des-clients">Créer des clients</a></li>
+        <li class="main "><a href="#creer-des-contacts">Créer des contacts</a></li>
+        <li class="main "><a href="#ajouter-des-contacts-dans-le-crm">Ajouter des contacts dans le CRM</a></li>
+        <li class="main "><a href="#effectuer-des-conversion-de-piste-en-gagne-demande-de-devis-et-perdu">Effectuer des conversion de piste en gagné (demande de devis) et perdu</a></li>
+        <li class="main "><a href="#creer-des-devis">Créer des devis</a></li>
+        <li class="main "><a href="#faire-une-impression-du-report-que-vous-avez-creer">Faire une impression du report que vous avez créer</a></li>
+        <li class="main "><a href="#valider-le-payement-et-verifier-que-la-transaction-est-operationnelle-dans-la-base-de-donnee">Valider le payement et vérifier que la transaction est opérationnelle dans la base de donnée</a></li>
+        <li class="main "><a href="#vous-savez-maintenant-vous-servir-des-fonctions-les-plus-importantes-dodoo-felicitation">Vous savez maintenant vous servir des fonctions les plus importantes d'Odoo félicitation !</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="utilisation-projet-odoo-bieraubeurre">Utilisation projet ODOO: Bieraubeurre</h1>
+<p>Vous pouvez accéder au <a href="https://github.com/pierre-roman/Projet-Odoo-Type-Product">code source</a> du module.</p>
+<h1 id="_1"></h1>
+<h2 id="creer-des-produits-avec-le-nouveaux-type">Créer des produits avec le nouveaux type</h2>
+<h1 id="_2"></h1>
+<p>Pour la création d'un article, il faut se rendre dans l'écran facturation puis dans l'onglet client et enfin sur article.</p>
+<p><img alt="Screenshot" src="../img/menu_article.PNG" /></p>
+<p>Une fois que l'on est dans l'écran Articles on peut voir une liste des articles déjà créer ainsi qu'un menu, nous donnant la possibilité de créer ou d'importer des articles.</p>
+<p><img alt="Screenshot" src="../img/liste_article.PNG" /></p>
+<p>Prenons un exemple, nous voulons créer un nouvel article, on clique donc sur "créer", on arrive sur un écran de création de notre nouvel article.</p>
+<p><img alt="Screenshot" src="../img/ecran_article.PNG" /></p>
+<p>On peut remarquer l'ajout du champ "Mes types de produits" par le module product_type que nous avons réalisé.</p>
+<p><img alt="Screenshot" src="../img/type_article.png" /></p>
+<p>Il vous suffit de saisir le nom et les autres informations de votre article et de sauvegarder, l'article apparaîtra dans la liste.</p>
+<h1 id="_3"></h1>
+<h2 id="creer-un-nouveau-type">Créer un nouveau type</h2>
+<h1 id="_4"></h1>
+<p>On peut accèder à l'interface de création depuis l'interface de modification/création de l'article ou du menu principal d'Odoo.</p>
+<p><img alt="Screenshot" src="../img/type_article.png" /></p>
+<p><img alt="Screenshot" src="../img/menu_odoo_type.png" /></p>
+<p>Pour créer un nouveau type, il suffit de saisir le nom du nouveau type et de sauvegarder.</p>
+<p><img alt="Screenshot" src="../img/interface_creation_type.png" /></p>
+<p>Si on prend l'exemple de tout à l'heure en affichant la liste des types, on remarque bien que "exemple" a été ajouté.</p>
+<p><img alt="Screenshot" src="../img/creation_type.png" /></p>
+<h2 id="creer-des-clients">Créer des clients</h2>
+<h1 id="_5"></h1>
+<p>Pour la création d'un client, il faut se rendre dans l'écran facturation puis dans l'onglet client et enfin sur client.</p>
+<p><img alt="Screenshot" src="../img/menu_client.PNG" /></p>
+<p>Une fois que l'on est dans l'écran Clients on peut voir une liste des clients déjà créer ainsi qu'un menu, nous donnant la possibilité de créer ou d'importer des clients.</p>
+<p><img alt="Screenshot" src="../img/liste_client.PNG" /></p>
+<p>Prenons un exemple, nous voulons créer un nouveau client, on clique donc sur "créer", on arrive sur un écran de création de notre nouveau client.</p>
+<p><img alt="Screenshot" src="../img/ecran_client.PNG" /></p>
+<p>Il vous suffit de saisir le nom et les autres informations de votre client et de sauvegarder, le client apparaîtra dans la liste.</p>
+<h1 id="_6"></h1>
+<h2 id="creer-des-contacts">Créer des contacts</h2>
+<h1 id="_7"></h1>
+<p>Pour créer d'un contact, au démarrage d'Odoo cliquez sur le menu en haut à gauche puis, dans l'onglet contacts.</p>
+<p><img alt="Screenshot" src="../img/menu_contact.PNG" /></p>
+<p>Une fois que l'on est dans l'écran Contacts on peut voir une liste des contacts déjà créer ainsi qu'un menu, nous donnant la possibilité de créer ou d'importer des contacts.</p>
+<p><img alt="Screenshot" src="../img/liste_contact.PNG" /></p>
+<p>Prenons un exemple, nous voulons créer un nouveau contact, on clique donc sur "créer", on arrive sur un écran de création de notre nouveau contact.</p>
+<p><img alt="Screenshot" src="../img/ecran_contact.PNG" /></p>
+<p>Il vous suffit de saisir le nom et les autres informations de votre contact et de sauvegarder, le contact apparaîtra dans la liste.</p>
+<h1 id="_8"></h1>
+<p>Il est possible de lui préciser une société, ou d'en créer une, en effet si on clique sur le menu déroulant de Société on peut attribuer une société ou en créer une.</p>
+<p><img alt="Screenshot" src="../img/champ_societe.png" /></p>
+<h2 id="ajouter-des-contacts-dans-le-crm">Ajouter des contacts dans le CRM</h2>
+<h1 id="_9"></h1>
+<p>Pour ajouter des contacts dans notre CRM, il suffit de cliquer sur le menu en haut à gauche puis sur l'onglet CRM.</p>
+<p><img alt="Screenshot" src="../img/menu_CRM.PNG" /></p>
+<p>Une fois que l'on est dans l'écran CRM on peut voir une liste des pipelines déjà créer ainsi qu'un menu, nous donnant la possibilité de créer ou d'importer des pipelines.</p>
+<p><img alt="Screenshot" src="../img/liste_CRM.PNG" /></p>
+<p>Prenons un exemple, nous voulons créer un nouveau pipeline, on clique donc sur "créer", on arrive sur un écran de création de notre nouveau pipeline.</p>
+<p><img alt="Screenshot" src="../img/ecran_CRM.PNG" /></p>
+<p>Par la suite il vous faut saisir l'opportunité, le client, le revenu espéré et enfin la priorité de l'étiquette.</p>
+<h1 id="_10"></h1>
+<h2 id="effectuer-des-conversion-de-piste-en-gagne-demande-de-devis-et-perdu">Effectuer des conversion de piste en gagné (demande de devis) et perdu</h2>
+<h1 id="_11"></h1>
+<p>Il est possible que des pistes soient gagnées et amène à une demande de devis ou bien perdu et donc abandonnées.</p>
+<h1 id="_12"></h1>
+<p>Prenons un exemple j'ai deux pistes une avec Serpentard de 150 euros et une avec Gryffondor de 200 euros,</p>
+<p><img alt="Screenshot" src="../img/nouv_piste.PNG" /></p>
+<p>Gryffondor est perdu je clique sur l'étiquette pour spécifier l'échec de cette piste.</p>
+<p><img alt="Screenshot" src="../img/perdu_piste.PNG" /></p>
+<p>On précise le motif de cette perte, avec les motifs par défault ou on peut en créer un particulier.</p>
+<p><img alt="Screenshot" src="../img/perdu_piste_motif.png" /></p>
+<p>On peut voir qu'un bagde perdu apparaît sur l'étiquette.</p>
+<p><img alt="Screenshot" src="../img/piste_perdu_badge.PNG" /></p>
+<p>Si on rafraichit notre liste on remarque que la piste de Gryffondor a été supprimée.</p>
+<p><img alt="Screenshot" src="../img/liste_CRM_refresh.PNG" /></p>
+<p>Maitenenant on prend la piste de Serpentard et on l'a gagnée on clique donc sur l'étiquette et on la marque comme gagné !</p>
+<p><img alt="Screenshot" src="../img/gagne_piste.PNG" /></p>
+<p>On peut voir qu'un bagde gagné apparaît sur l'étiquette.</p>
+<p><img alt="Screenshot" src="../img/piste_gagne_badge.PNG" /></p>
+<p>Si on rafraichit notre liste on remarque que la piste de Serpentard a bougé vers Gagné.</p>
+<p><img alt="Screenshot" src="../img/liste_CRM_gagne.PNG" /></p>
+<p>On peut maitenant cliquer sur l'étiquette et effectuer une demande de devis.</p>
+<p><img alt="Screenshot" src="../img/demande_devis.PNG" /></p>
+<h2 id="creer-des-devis">Créer des devis</h2>
+<h1 id="_13"></h1>
+<p>Une fois que nous avons effectué une demande de devis il est temps de créer le devis, une fois qu'on a appuyé sur "nouveau devis", on arrive sur l'interface de création du devis.</p>
+<p><img alt="Screenshot" src="../img/ecran_devis.PNG" /></p>
+<p>Il nous suffit de saisir les différentes informations comme la validité, les conditions de paiement et bien sûr les articles de la commande.</p>
+<p><img alt="Screenshot" src="../img/ecran_devis_complet.PNG" /></p>
+<p>Nous avons ensuite accès à différentes fonctions du menu comme l'envoi par email ou encore l'impression.</p>
+<p><img alt="Screenshot" src="../img/ecran_devis_menu.PNG" /></p>
+<p>Maitenant on peut valider et un bouton créer une facture apparait dans le menu.</p>
+<p><img alt="Screenshot" src="../img/menu_devis_facture.PNG" /></p>
+<h2 id="faire-une-impression-du-report-que-vous-avez-creer">Faire une impression du report que vous avez créer</h2>
+<h1 id="_14"></h1>
+<p>Une fois que le devis est créé on peut effectuer une impression en cliquant sur le bouton imprimer ce qui nous donne ce pdf.</p>
+<p><img alt="Screenshot" src="../img/devis_pdf.png" /></p>
+<h2 id="valider-le-payement-et-verifier-que-la-transaction-est-operationnelle-dans-la-base-de-donnee">Valider le payement et vérifier que la transaction est opérationnelle dans la base de donnée</h2>
+<h1 id="_15"></h1>
+<p>Une fois que le devis et validé et que la facture a été créée on peut procéder à la validation du paiement.</p>
+<p><img alt="Screenshot" src="../img/facture_vald.PNG" /></p>
+<p>On arrive alors sur une interface qui nous récapitule toutes les informations et une fois fait on valide.</p>
+<p><img alt="Screenshot" src="../img/facture_vald_inter.PNG" /></p>
+<p>On voit maintenant que la facture a été payé avec la date du paiement ! </p>
+<p><img alt="Screenshot" src="../img/facture_paye.PNG" /></p>
+<h3 id="vous-savez-maintenant-vous-servir-des-fonctions-les-plus-importantes-dodoo-felicitation">Vous savez maintenant vous servir des fonctions les plus importantes d'Odoo félicitation !</h3></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
