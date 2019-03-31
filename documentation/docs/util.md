@@ -28,6 +28,24 @@ Il vous suffit de saisir le nom et les autres informations de votre article et d
 
 #
 
+## Créer un nouveau type
+
+#
+
+On peut accèder à l'interface de création depuis l'interface de modification/création de l'article ou du menu principal d'Odoo.
+
+![Screenshot](img/type_article.png)
+
+![Screenshot](img/menu_odoo_type.png)
+
+Pour créer un nouveau type, il suffit de saisir le nom du nouveau type et de sauvegarder.
+
+![Screenshot](img/interface_creation_type.png)
+
+Si on prend l'exemple de tout à l'heure en affichant la liste des types, on remarque bien que "exemple" a été ajouté.
+
+![Screenshot](img/creation_type.png)
+
 ## Créer des clients
 
 #
