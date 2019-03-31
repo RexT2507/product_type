@@ -68,7 +68,7 @@ Il vous suffit de saisir le nom et les autres informations de votre contact et d
 
 #
 
-Il est possible de lui précister une société, ou dans créer une, en effet si on clique sur le menu déroulant de Société on peut attribuer une société ou en créer une.
+Il est possible de lui préciser une société, ou d'en créer une, en effet si on clique sur le menu déroulant de Société on peut attribuer une société ou en créer une.
 
 ![Screenshot](img/champ_societe.png)
 
@@ -104,7 +104,7 @@ Prenons un exemple j'ai deux pistes une avec Serpentard de 150 euros et une avec
 
 ![Screenshot](img/nouv_piste.PNG)
 
-Gryffondor est perdu je clique sur l'étiquette pour spécifier l'echec de cette piste.
+Gryffondor est perdu je clique sur l'étiquette pour spécifier l'échec de cette piste.
 
 ![Screenshot](img/perdu_piste.PNG)
 
@@ -116,7 +116,7 @@ On peut voir qu'un bagde perdu apparaît sur l'étiquette.
 
 ![Screenshot](img/piste_perdu_badge.PNG)
 
-Si on rafrachie notre liste on remarque que la piste de Gryffondor a été supprimée.
+Si on rafraichit notre liste on remarque que la piste de Gryffondor a été supprimée.
 
 ![Screenshot](img/liste_CRM_refresh.PNG)
 
@@ -128,7 +128,7 @@ On peut voir qu'un bagde gagné apparaît sur l'étiquette.
 
 ![Screenshot](img/piste_gagne_badge.PNG)
 
-Si on rafrachie notre liste on remarque que la piste de Serpentard a bougée vers Gagné.
+Si on rafraichit notre liste on remarque que la piste de Serpentard a bougé vers Gagné.
 
 ![Screenshot](img/liste_CRM_gagne.PNG)
 
@@ -144,11 +144,11 @@ Une fois que nous avons effectué une demande de devis il est temps de créer le
 
 ![Screenshot](img/ecran_devis.PNG)
 
-Il nous suffit de saisir les différentes informations comme la validité, les conditions de paiement et bien sur les articles de la commande.
+Il nous suffit de saisir les différentes informations comme la validité, les conditions de paiement et bien sûr les articles de la commande.
 
 ![Screenshot](img/ecran_devis_complet.PNG)
 
-Nous avons ensuite accès à différentes fonctions du menu comme l'envoie par email ou encore l'impression.
+Nous avons ensuite accès à différentes fonctions du menu comme l'envoi par email ou encore l'impression.
 
 ![Screenshot](img/ecran_devis_menu.PNG)
 
@@ -160,7 +160,7 @@ Maitenant on peut valider et un bouton créer une facture apparait dans le menu.
 
 #
 
-Une fois que le devis est créer on peut effectuer une impression en cliquant sur le bouton imprimer ce qui nous donne ce pdf.
+Une fois que le devis est créé on peut effectuer une impression en cliquant sur le bouton imprimer ce qui nous donne ce pdf.
 
 ![Screenshot](img/devis_pdf.png)
 
@@ -168,7 +168,7 @@ Une fois que le devis est créer on peut effectuer une impression en cliquant su
 
 # 
 
-Une fois que le devis et validé et que la facture a été créée on peut procéder à la validation du payment.
+Une fois que le devis et validé et que la facture a été créée on peut procéder à la validation du paiement.
 
 ![Screenshot](img/facture_vald.PNG)
 
@@ -176,7 +176,7 @@ On arrive alors sur une interface qui nous récapitule toutes les informations e
 
 ![Screenshot](img/facture_vald_inter.PNG)
 
-On voit maintenant que la facture a été payé avec la date du payment ! 
+On voit maintenant que la facture a été payé avec la date du paiement ! 
 
 ![Screenshot](img/facture_paye.PNG)
 
