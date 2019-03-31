@@ -22,15 +22,13 @@
     'depends': ['base','product','account','sale'],
 
     # always loaded
-    'data': [
-	'security/ir.model.access.csv',
-	'views/type.xml',
-	'views/devis.xml',
-	'views/facture.xml',
+    'data': 
+    [
+        'security/ir.model.access.csv',
+        'views/type.xml',
+        'views/devis.xml',
+        'views/facture.xml',
         'views/typeProduct_View.xml'
- 	#'views/type.xml',1
-        # 'views/views.xml',
-        # 'views/templates.xml',
     ],
 
     'application':True,

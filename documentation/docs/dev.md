@@ -75,7 +75,7 @@ Dans un premier temps nous avons modifié le report du devis
 
 ![Screenshot](img/devis_type_product.PNG)
 
-Nous avons modifié le report_invoices_document, afin d'ajouter le champ "type produit"
+Nous avons créé une template XML qui s'injecte directement dans le report_saleorder_document
 
 ![Screenshot](img/devis_code.PNG)
 
@@ -83,6 +83,9 @@ Puis nous avons modifié le report de facture
 
 ![Screenshot](img/facture_type_product.PNG)
 
+Nous avons créé une templmate XMl qui s'injecte directement dans le report_invoice_document
+
+![Screenshot](img/facture_code.PNG)
 
 ## Créer un report qui permet de donner un topos sur les ventes des produit en les classant par type
 
