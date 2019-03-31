@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- insertion des types de produit 
+	dans la vue fiche article/produit -->
+	<record id="product_template_form_view_extend" model="ir.ui.view">    
+        	<field name="name">product.template.producttype</field>
+        	<field name="model">product.template</field>    
+        	<field name="inherit_id" ref="product.product_template_form_view"/>    
+        	<field name="arch" type="xml">
+            		<xpath expr="//field[@name='categ_id']" position="after">
+                        	<field name="typeprod"></field>				
+                	</xpath>
+        	</field>
+    </record>
+
+<!-- Vue pour ajout de nouveau type -->
+<record id="product_type_form_view" model="ir.ui.view">
+            <field name="name">product.type.form</field>
+            <field name="model">product.type</field>
+            <field name="arch" type="xml">
+                <form string="Type de produit">
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+</record>
+
+<!-- product.type ne fonctionne pas comme res_model-->
+<!-- avec un res_model existant product.product fonctionne-->
+<!-- Menu pour ajouter des types de produit-->
+	<record id="product_product_type_action" model="ir.actions.act_window"> 
+            <field name="name">Hacyrak - Type de produit</field>
+            <field name="res_model">product.type</field>
+            <field name="view_mode">form</field>
+            <field name="view_type">form</field>
+        </record>
+	<menuitem id = "prod_type_main" name="Type prod" />
+        <menuitem action="product_product_type_action" id="menu_product_product_type_conf" parent="product.prod_config_main" />
+</odoo>

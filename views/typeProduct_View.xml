@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+        <record id="type_product_menu_action" model="ir.actions.act_window">
+        	<field name="name">Les types de Produit</field>
+        	<field name="res_model">typeproduct.typeproduct</field>
+        	<field name="view_type">form</field>
+        	<field name="view_mode">tree,form</field>
+        	<field name="domain">[]</field>
+        	<field name="help" type="html">
+            	<p class="oe_view_nocontent_create">Create The First Type_product
+            	</p>
+        	</field>
+    </record>
+
+    	<menuitem id="all_type_product_menu"
+              	name="les types de produit"/>
+    	<menuitem id="type_product_menu" parent="all_type_product_menu" name="Type de produit" action="type_product_menu_action"/>
+	</data>
+</odoo>
