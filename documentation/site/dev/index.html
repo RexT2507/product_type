@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Développement - Groupe 3 documentation</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">Groupe 3 documentation</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="..">Accueil</a>
+                            </li>
+                            <li class="active">
+                                <a href="./">Développement</a>
+                            </li>
+                            <li >
+                                <a href="../util/">Utilisation</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="..">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../util/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#developpement-projet-odoo-bieraubeurre">Développement projet ODOO: Bieraubeurre</a></li>
+        <li class="main "><a href="#modifier-le-module-produit-en-rajoutant-un-champs-type">Modifier le module produit en rajoutant un champs « type »</a></li>
+        <li class="main "><a href="#le-champs-type-pointera-vers-une-table-qui-fournira-plusieurs-type">Le champs type pointera vers une table qui fournira plusieurs type</a></li>
+        <li class="main "><a href="#creer-une-interface-dans-odoo-qui-permet-de-rajouter-les-types-de-de-produits">Créer une interface dans Odoo qui permet de rajouter les types de de produits</a></li>
+        <li class="main "><a href="#modifier-le-report-du-devis-et-de-la-facturation-pour-rajouter-le-type-de-produit-dans-les-lignes-de-produits">Modifier le report du devis et de la facturation pour rajouter le type de produit dans les lignes de produits</a></li>
+        <li class="main "><a href="#creer-un-report-qui-permet-de-donner-un-topos-sur-les-ventes-des-produit-en-les-classant-par-type">Créer un report qui permet de donner un topos sur les ventes des produit en les classant par type</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="developpement-projet-odoo-bieraubeurre">Développement projet ODOO: Bieraubeurre</h1>
+<p>Vous pouvez accéder au <a href="https://github.com/RexT2507/product_type">code source</a> du module.</p>
+<h1 id="_1"></h1>
+<h2 id="modifier-le-module-produit-en-rajoutant-un-champs-type">Modifier le module produit en rajoutant un champs « type »</h2>
+<h1 id="_2"></h1>
+<p>Le but était d'ajouter notre champ type dans l'onglet du produit</p>
+<p><img alt="Screenshot" src="../img/dev_produit_type.png" /></p>
+<p>Pour faire cette modification nous avons créé notre propre module "product_type" puis nous avons créé une classe TypeProduct qui permet de définir le nom de nos types.</p>
+<p><img alt="Screenshot" src="../img/class_type_product.PNG" /></p>
+<p>Ainsi que la classe ProductTemplate dans laquelle on effectue un lien vers la template du module product d'Odoo.</p>
+<p><img alt="Screenshot" src="../img/class_product.PNG" /></p>
+<p>Pour l'affichage on crée un record dans lequel on appelle la variable de notre models.py, on place ensuite le tout dans note template XML.</p>
+<p><img alt="Screenshot" src="../img/record_product.PNG" /></p>
+<h2 id="le-champs-type-pointera-vers-une-table-qui-fournira-plusieurs-type">Le champs type pointera vers une table qui fournira plusieurs type</h2>
+<h1 id="_3"></h1>
+<p>Dans la classe ProductTemplate, nous avons effectué la connexion avec la table à l'aide de la fonction Many2one.</p>
+<p><img alt="Screenshot" src="../img/many2one.PNG" /></p>
+<h2 id="creer-une-interface-dans-odoo-qui-permet-de-rajouter-les-types-de-de-produits">Créer une interface dans Odoo qui permet de rajouter les types de de produits</h2>
+<h1 id="_4"></h1>
+<p>Nous avons créé notre propre module et nous l'avons connecté avec la database afin de créer des types de produits.</p>
+<h1 id="_5"></h1>
+<p>On peut accéder à l'interface depuis le menu de Odoo ainsi que depuis l'interface du produit.</p>
+<p><img alt="Screenshot" src="../img/menu_product_type.PNG" /></p>
+<p>Et voilà le menu qui nous permet de créer des nouveaux types de produit.</p>
+<p><img alt="Screenshot" src="../img/interface_product_type.PNG" /></p>
+<p>Dans un premier temps nous avons créé une classe</p>
+<p><img alt="Screenshot" src="../img/class_product.PNG" /></p>
+<p>Puis nous avons créé la view XML</p>
+<p><img alt="Screenshot" src="../img/type_product_xml.PNG" /></p>
+<p>Par la suite nous avons import la template dans le init de models</p>
+<p><img alt="Screenshot" src="../img/init.PNG" /></p>
+<p>Enfin nous avons chargé la view ainsi que le fichier de sécurité .csv</p>
+<p><img alt="Screenshot" src="../img/load_type.PNG" /></p>
+<h2 id="modifier-le-report-du-devis-et-de-la-facturation-pour-rajouter-le-type-de-produit-dans-les-lignes-de-produits">Modifier le report du devis et de la facturation pour rajouter le type de produit dans les lignes de produits</h2>
+<h1 id="_6"></h1>
+<p>Dans un premier temps nous avons modifié le report du devis</p>
+<p><img alt="Screenshot" src="../img/devis_type_product.PNG" /></p>
+<p>Nous avons créé une template XML qui s'injecte directement dans le report_saleorder_document</p>
+<p><img alt="Screenshot" src="../img/devis_code.PNG" /></p>
+<p>Puis nous avons modifié le report de facture</p>
+<p><img alt="Screenshot" src="../img/facture_type_product.PNG" /></p>
+<p>Nous avons créé une templmate XMl qui s'injecte directement dans le report_invoice_document</p>
+<p><img alt="Screenshot" src="../img/facture_code.PNG" /></p>
+<h2 id="creer-un-report-qui-permet-de-donner-un-topos-sur-les-ventes-des-produit-en-les-classant-par-type">Créer un report qui permet de donner un topos sur les ventes des produit en les classant par type</h2>
+<h1 id="_7"></h1>
+<p>Nous n'avons pas pu arriver au bout de cette tache malheureusement...</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
