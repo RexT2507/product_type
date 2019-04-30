@@ -1,6 +1,6 @@
 # Utilisation projet ODOO: Bieraubeurre
 
-Vous pouvez accéder au [code source](https://github.com/pierre-roman/Projet-Odoo-Type-Product) du module.
+Vous pouvez accéder au [code source](https://github.com/RexT2507/product_type) du module.
 
 #
 
