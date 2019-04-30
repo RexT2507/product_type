@@ -12,4 +12,4 @@
 + HTML
 
 ## Documentation complète
-Le [lien](https://RexT2507.github.io/product_type/) de la documentation du projet.
+Le [lien]() de la documentation du projet.
