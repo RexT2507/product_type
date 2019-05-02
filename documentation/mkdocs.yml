@@ -1,6 +1,0 @@
-site_name: Groupe 3 documentation
-
-nav:
-    - Accueil: index.md
-    - Développement: dev.md
-    - Utilisation: util.md
